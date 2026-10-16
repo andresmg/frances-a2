@@ -345,7 +345,7 @@
     var hero = el('section', { class: 'hero' }, [
       el('p', { class: 'eyebrow', text: 'Édito A2 · Cuaderno interactivo' }),
       el('h1', { html: 'Ejercicios de francés,<br>unidad a unidad.' }),
-      el('p', { class: 'lead', text: 'Responde y la web te corrige al momento. Las unidades se irán desbloqueando a medida que avances en el libro.' })
+      el('p', { class: 'lead', text: 'Responde y la web te corrige al momento. Las unidades se irán desbloqueando a medida que avances en los ejercicios.' })
     ]);
     var list = el('ol', { class: 'units' });
     window.UNITS.forEach(function (u) {
