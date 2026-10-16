@@ -117,18 +117,21 @@
     choice: function (item, done) {
       var wrap = el('div', { class: 'choice' });
       var fb = el('div', { class: 'feedback' });
-      var answered = false;
-      item.options.forEach(function (opt, i) {
-        var b = el('button', { class: 'opt', type: 'button', html: opt, onclick: function () {
+      var answered = false, correctBtn = null;
+      var opts = item.options.map(function (o, i) { return { o: o, i: i }; });
+      if (item.shuffle) opts = shuffle(opts);
+      opts.forEach(function (op) {
+        var b = el('button', { class: 'opt', type: 'button', html: op.o, onclick: function () {
           if (answered) return;
           answered = true;
-          var right = i === item.answer;
+          var right = op.i === item.answer;
           b.classList.add(right ? 'ok' : 'ko');
-          wrap.children[item.answer].classList.add('ok');
+          correctBtn.classList.add('ok');
           Array.prototype.forEach.call(wrap.children, function (c) { c.disabled = true; });
           feedback(fb, right ? 'ok' : 'ko', (right ? '¡Correcto!' : 'No exactamente.') + (item.explain ? ' ' + item.explain : ''));
           done(right ? 'ok' : 'ko');
         } });
+        if (op.i === item.answer) correctBtn = b;
         wrap.appendChild(b);
       });
       return [wrap, fb];
