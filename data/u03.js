@@ -85,40 +85,40 @@
         ]
       },
       {
-        id: 'conditionnel', skill: 'Grammaire', title: 'Le conditionnel de politesse',
-        summary: 'Je voudrais, pourriez-vous…',
-        tip: '<p>Para pedir con cortesía: raíz del futuro + terminaciones del imparfait.</p><p><i>vouloir → je <b>voudrais</b>, pouvoir → vous <b>pourriez</b>, aimer → j’<b>aimerais</b>, être → ce <b>serait</b>, avoir → vous <b>auriez</b>, devoir → tu <b>devrais</b>, falloir → il <b>faudrait</b></i>.</p>',
+        id: 'superlatif', skill: 'Grammaire', title: 'Le superlatif',
+        summary: 'Le plus, le moins, le meilleur, le mieux.',
+        tip: '<p><b>le / la / les + plus / moins</b> + adjetivo (+ <b>de</b>): <i>C’est <b>la plus grande</b> pièce <b>de</b> la maison. C’est le quartier <b>le moins cher de</b> la ville.</i></p><p>Si el adjetivo va detrás del nombre, se repite el artículo: <i>l’appartement <b>le plus</b> lumineux</i>.</p><p>verbo + <b>le plus / le moins</b>: <i>C’est la pièce où je passe <b>le plus</b> de temps.</i></p><p>Irregulares: <i>bon → <b>le meilleur</b>, bien → <b>le mieux</b></i>.</p>',
         items: [
-          c('Bonjour, je ___ visiter l’appartement.', ['voudrais', 'voudrai', 'voulait']),
-          c('___-vous me donner le prix du loyer ?', ['Pourriez', 'Pourrez', 'Pouviez']),
-          c('J’___ avoir plus d’informations.', ['aimerais', 'aimerai', 'aimait']),
-          c('Est-ce que ce ___ possible de visiter samedi ?', ['serait', 'sera', 'était']),
-          c('Vous ___ un studio libre en septembre ?', ['auriez', 'aurez', 'aviez']),
-          c('Nous ___ louer une maison avec jardin.', ['voudrions', 'voudrons', 'voulions']),
-          c('Tu ___ m’aider à déménager ?', ['pourrais', 'pourras', 'pouvais']),
-          c('« Je voudrais un café. » ¿Para qué sirve aquí el conditionnel?', ['para pedir con cortesía', 'para hablar del futuro', 'para contar un recuerdo']),
-          c('<i>pouvoir</i>, je → ', ['je pourrais', 'je pouvrais', 'je pourais']),
-          c('<i>avoir</i>, nous → ', ['nous aurions', 'nous avions', 'nous aurons']),
-          c('<i>être</i>, vous → ', ['vous seriez', 'vous étiez', 'vous serez']),
-          c('<i>faire</i>, elle → ', ['elle ferait', 'elle faisait', 'elle fera']),
-          c('<i>vouloir</i>, ils → ', ['ils voudraient', 'ils voulaient', 'ils voudront']),
-          c('<i>aimer</i>, tu → ', ['tu aimerais', 'tu aimais', 'tu aimeras']),
-          c('<i>devoir</i>, je → ', ['je devrais', 'je devais', 'je devrai']),
-          c('¿Cuál es más cortés?', ['Pourriez-vous fermer la porte, s’il vous plaît ?', 'Fermez la porte !', 'Tu fermes la porte.']),
-          f('Je {voudrais} un appartement avec ascenseur.', 'vouloir'),
-          f('Vous {pourriez} m’envoyer les photos ?', 'pouvoir'),
-          f('Nous {aimerions} visiter demain.', 'aimer'),
-          f('Ce {serait} parfait pour nous !', 'être'),
-          f('Tu {devrais} demander au propriétaire.', 'devoir'),
-          f('Il {faudrait} payer deux mois de caution.', 'falloir'),
-          f('Vous {auriez} une place de parking ?', 'avoir'),
-          f('Elles {voudraient} une chambre chacune.', 'vouloir'),
-          w('Escribe en francés: «Quisiera visitar el piso.»', 'Je voudrais visiter l’appartement.'),
-          w('Escribe en francés (usted): «¿Podría llamarme mañana?»', 'Pourriez-vous m’appeler demain ? | Vous pourriez m’appeler demain ?'),
-          w('Escribe en francés: «Me gustaría vivir en el centro.»', 'J’aimerais habiter dans le centre. | J’aimerais vivre dans le centre. | J’aimerais habiter au centre-ville. | J’aimerais vivre au centre-ville. | J’aimerais habiter en centre-ville. | J’aimerais vivre en centre-ville.'),
-          w('Escribe en francés: «Sería genial.»', 'Ce serait génial. | Ce serait super.'),
-          w('Escribe en francés: «Deberías hablar con el vecino.»', 'Tu devrais parler au voisin. | Tu devrais parler avec le voisin.'),
-          w('Escribe en francés (usted): «¿Tendría un piso con terraza?»', 'Vous auriez un appartement avec terrasse ? | Auriez-vous un appartement avec terrasse ? | Vous auriez un appartement avec une terrasse ? | Auriez-vous un appartement avec une terrasse ?')
+          c('C’est ___ grande chambre de l’appartement.', ['la plus', 'le plus', 'plus']),
+          c('C’est l’immeuble ___ moderne du quartier.', ['le plus', 'la plus', 'plus de']),
+          c('Ce sont les maisons ___ chères de la rue.', ['les plus', 'le plus', 'la plus']),
+          c('C’est le quartier le plus calme ___ la ville.', ['de', 'que', 'dans']),
+          c('C’est ___ boulangerie du quartier ! (bon)', ['la meilleure', 'la plus bonne', 'la mieux']),
+          c('C’est le studio ___ cher de l’agence. (menos)', ['le moins', 'le plus moins', 'moins']),
+          c('De toute la maison, c’est ici que je dors ___. (bien)', ['le mieux', 'le meilleur', 'le plus bien']),
+          c('C’est la pièce ___ lumineuse de la maison.', ['la plus', 'le plus', 'plus de']),
+          c('C’est le ___ appartement que j’ai visité. (bon)', ['meilleur', 'plus bon', 'mieux']),
+          c('Ce sont les ___ voisins du monde ! (bon)', ['meilleurs', 'meilleures', 'mieux']),
+          c('« C’est la ville la plus chère de France » significa…', ['Es la ciudad más cara de Francia.', 'Es una ciudad más cara que Francia.', 'Es la ciudad menos cara de Francia.']),
+          c('¿Qué frase es correcta?', ['C’est la rue la plus animée de Paris.', 'C’est la rue plus animée de Paris.', 'C’est la rue la plus animée que Paris.']),
+          c('¿Qué frase es correcta?', ['C’est le meilleur quartier.', 'C’est le plus bon quartier.', 'C’est le mieux quartier.']),
+          c('¿Qué frase es correcta?', ['C’est elle qui cuisine le mieux.', 'C’est elle qui cuisine le meilleur.', 'C’est elle qui cuisine la mieux.']),
+          c('Comparativo o superlativo: « Mon salon est plus grand que ta cuisine. »', ['comparativo', 'superlativo', 'ninguno']),
+          c('Comparativo o superlativo: « C’est la plus belle maison du village. »', ['superlativo', 'comparativo', 'ninguno']),
+          f('C’est {la} plus belle vue de la ville.'),
+          f('C’est l’appartement {le} plus petit de l’immeuble.'),
+          f('Ce sont {les} pièces les plus froides de la maison.'),
+          f('C’est la cuisine la plus moderne {de} l’agence.'),
+          f('C’est la {meilleure} pizzeria du quartier.', 'bon'),
+          f('C’est dans ce fauteuil que je lis le {mieux}.', 'bien'),
+          f('C’est le quartier le {moins} cher de la ville.', 'menos'),
+          w('Escribe en francés: «Es la habitación más grande.»', 'C’est la chambre la plus grande. | C’est la plus grande chambre.'),
+          w('Escribe en francés: «Es el barrio más tranquilo de la ciudad.»', 'C’est le quartier le plus calme de la ville. | C’est le quartier le plus tranquille de la ville.'),
+          w('Escribe en francés: «Es la mejor panadería del barrio.»', 'C’est la meilleure boulangerie du quartier.'),
+          w('Escribe en francés: «Es el piso menos caro.»', 'C’est l’appartement le moins cher.'),
+          o('C’ / est / la / pièce / la / plus / agréable / de / la / maison / .'),
+          o('C’ / est / le / meilleur / quartier / pour / les / familles / .'),
+          o('Voici / l’ / immeuble / le / plus / ancien / de / la / rue / .')
         ]
       },
       {
@@ -231,7 +231,7 @@
           w('Escribe en francés: «Quisiera alquilar un piso de dos dormitorios.»', 'Je voudrais louer un appartement de deux chambres. | Je voudrais louer un appartement avec deux chambres. | J’aimerais louer un appartement de deux chambres. | J’aimerais louer un appartement avec deux chambres.'),
           open('Escribe un e-mail corto a una agencia para pedir información sobre un piso.', 'Bonjour, je voudrais avoir des informations sur l’appartement de la rue Victor Hugo. Est-ce que les charges sont comprises ? Je pourrais le visiter samedi ? Merci beaucoup.', [
             { label: 'Saludas', re: /(bonjour|madame|monsieur)/i },
-            { label: 'Usas el conditionnel de cortesía', re: /(voudrais|aimerais|pourrais|pourriez|serait)/i },
+            { label: 'Pides información con cortesía', re: /(je voudrais|j’aimerais|j'aimerais|s’il vous plaît|s'il vous plaît|merci)/i },
             { label: 'Haces una pregunta', re: /\?/ },
             { label: 'Hablas de la vivienda', re: /(appartement|studio|maison|loyer|charges|chambre)/i }
           ])
@@ -355,7 +355,7 @@
       {
         id: 'ecrire', skill: 'Écriture', title: 'Écrire sur mon logement',
         summary: 'Traduce y describe tu casa.',
-        tip: '<p>Usa <i>qui, que, où</i>, las comparaciones y el conditionnel de cortesía.</p>',
+        tip: '<p>Usa <i>qui, que, où</i>, las comparaciones y el superlativo.</p>',
         items: [
           w('Escribe en francés: «Vivo en un piso pequeño.»', 'J’habite dans un petit appartement. | Je vis dans un petit appartement.'),
           w('Escribe en francés: «Mi habitación es más grande que la tuya.»', 'Ma chambre est plus grande que la tienne.'),
@@ -363,7 +363,7 @@
           w('Escribe en francés: «Tengo una vecina que es muy simpática.»', 'J’ai une voisine qui est très sympa. | J’ai une voisine qui est très sympathique.'),
           w('Escribe en francés: «Esta es la casa que he comprado.»', 'Voici la maison que j’ai achetée. | C’est la maison que j’ai achetée.'),
           w('Escribe en francés: «Quisiera un piso con ascensor.»', 'Je voudrais un appartement avec ascenseur. | Je voudrais un appartement avec un ascenseur.'),
-          w('Escribe en francés (usted): «¿Podría enviarme el contrato?»', 'Pourriez-vous m’envoyer le contrat ? | Vous pourriez m’envoyer le contrat ? | Pourriez-vous m’envoyer le bail ? | Vous pourriez m’envoyer le bail ?'),
+          w('Escribe en francés: «Es la casa más bonita de la calle.»', 'C’est la plus belle maison de la rue. | C’est la maison la plus belle de la rue.'),
           w('Escribe en francés: «El alquiler es demasiado caro.»', 'Le loyer est trop cher.'),
           w('Escribe en francés: «La cocina está equipada.»', 'La cuisine est équipée.'),
           w('Escribe en francés: «No hay ascensor.»', 'Il n’y a pas d’ascenseur.'),
@@ -379,7 +379,7 @@
           w('Escribe en francés: «El piso está en la tercera planta.»', 'L’appartement est au troisième étage.'),
           w('Escribe en francés: «Me gustaría tener un jardín.»', 'J’aimerais avoir un jardin.'),
           w('Escribe en francés: «Hay una farmacia enfrente de mi casa.»', 'Il y a une pharmacie en face de chez moi. | Il y a une pharmacie en face de ma maison.'),
-          w('Escribe en francés: «Deberías buscar otro piso.»', 'Tu devrais chercher un autre appartement.'),
+          w('Escribe en francés: «Mi habitación es la pieza más luminosa.»', 'Ma chambre est la pièce la plus lumineuse.'),
           w('Escribe en francés: «No te preocupes, vas a encontrar algo.»', 'Ne t’inquiète pas, tu vas trouver quelque chose. | Ne t’en fais pas, tu vas trouver quelque chose.'),
           w('Escribe en francés: «Es un edificio antiguo.»', 'C’est un vieil immeuble. | C’est un immeuble ancien.'),
           w('Escribe en francés: «Mi casa ideal tiene una terraza grande.»', 'Ma maison idéale a une grande terrasse.'),
@@ -393,8 +393,7 @@
           ]),
           open('Describe tu vivienda ideal usando qui, que u où.', 'Mon logement idéal, c’est une maison qui a un grand jardin. C’est un endroit où je peux lire au soleil. Je voudrais une cuisine que je peux partager avec mes amis.', [
             X.sentences(2),
-            { label: 'Usas qui, que u où', re: /(\squi\s|\sque\s|\squ’|\squ'|\soù\s)/i },
-            { label: 'Usas el conditionnel', re: /(voudrais|aimerais|serait|pourrais|aurait)/i }
+            { label: 'Usas qui, que u où', re: /(\squi\s|\sque\s|\squ’|\squ'|\soù\s)/i }
           ])
         ]
       }
