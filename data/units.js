@@ -9,11 +9,11 @@ window.UNITS = [
   { n: 5,  title: 'En route vers le futur !',     topic: 'Futur, technologie et innovations', file: 'data/u05.js' },
   { n: 6,  title: 'En cuisine',                   topic: 'Cuisine, quantités et restaurant', file: 'data/u06.js' },
   { n: 7,  title: 'À votre santé !',              topic: 'Corps, santé et conseils', file: 'data/u07.js' },
-  { n: 8,  title: 'Dans les médias',              topic: 'Médias, information et opinion', file: 'data/u08.js' },
-  { n: 9,  title: 'Consommer responsable',        topic: 'Achats, environnement, cause et conséquence', file: 'data/u09.js' },
-  { n: 10, title: 'Envie d’ailleurs ?',           topic: 'Voyages, hébergement et but', file: 'data/u10.js' },
+  { n: 8,  title: 'Dans les médias',              topic: 'Médias, cause, conséquence et subjonctif', file: 'data/u08.js' },
+  { n: 9,  title: 'Consommer responsable',        topic: 'Consommation, conditionnel et bricolage', file: 'data/u09.js' },
+  { n: 10, title: 'Envies d’ailleurs ?',           topic: 'Voyages, tourisme et récit au passé', file: 'data/u10.js' },
   { n: 11, title: 'De jolis parcours',            topic: 'Études, travail et parcours', file: 'data/u11.js' },
-  { n: 12, title: 'Soif de nature',               topic: 'Nature, planète et hypothèses', file: 'data/u12.js' }
+  { n: 12, title: 'Soif de nature',               topic: 'Nature, animaux, but et passif', file: 'data/u12.js' }
 ];
 
 // Cada data/uNN.js se registra aquí.
