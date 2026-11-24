@@ -57,20 +57,43 @@
 
   // ---------- Voz (speechSynthesis) ----------
   var frVoice = null;
+  // Prefiere voces francesas de buena calidad (naturales/mejoradas) y evita las robóticas.
+  function voiceScore(v) {
+    var n = (v.name || '') + ' ' + (v.voiceURI || '');
+    var s = /^fr(-|_)FR/i.test(v.lang) ? 10 : 0;
+    if (/natural|neural|premium|enhanced|mejorada|améliorée|online/i.test(n)) s += 8;
+    if (/google/i.test(n)) s += 6;
+    if (/amélie|amelie|thomas|audrey|aurélie|aurelie|denise|henri|vivienne|eloise|remy/i.test(n)) s += 5;
+    if (/eSpeak|compact|jacques|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley/i.test(n)) s -= 8;
+    return s;
+  }
   function pickVoice() {
     if (!('speechSynthesis' in window)) return;
-    var vs = speechSynthesis.getVoices();
-    frVoice = vs.filter(function (v) { return /^fr(-|_)FR/i.test(v.lang); })[0] || vs.filter(function (v) { return /^fr/i.test(v.lang); })[0] || null;
+    var vs = speechSynthesis.getVoices().filter(function (v) { return /^fr/i.test(v.lang); });
+    vs.sort(function (a, b) { return voiceScore(b) - voiceScore(a); });
+    frVoice = vs[0] || null;
   }
   if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+  var currentUtt = null, speakTimer = null, keepAlive = null;
   function speak(text, slow) {
     if (!('speechSynthesis' in window)) return false;
+    if (!frVoice) pickVoice();
+    clearTimeout(speakTimer); clearInterval(keepAlive);
     speechSynthesis.cancel();
-    var u = new SpeechSynthesisUtterance(text);
-    u.lang = 'fr-FR';
-    if (frVoice) u.voice = frVoice;
-    u.rate = slow ? 0.6 : 0.85;
-    speechSynthesis.speak(u);
+    // Chrome corta el audio si se habla justo después de cancel(): esperamos un momento.
+    speakTimer = setTimeout(function () {
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'fr-FR';
+      if (frVoice) u.voice = frVoice;
+      u.rate = slow ? 0.75 : 0.9;
+      u.pitch = 1;
+      u.onend = u.onerror = function () { clearInterval(keepAlive); currentUtt = null; };
+      currentUtt = u; // guardar la referencia evita que el navegador la descarte a mitad de frase
+      speechSynthesis.resume();
+      speechSynthesis.speak(u);
+      // Algunos navegadores pausan la voz solos; la reanudamos si ocurre.
+      keepAlive = setInterval(function () { if (speechSynthesis.paused) speechSynthesis.resume(); }, 250);
+    }, 150);
     return true;
   }
   function playButton(text) {
