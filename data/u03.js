@@ -91,7 +91,7 @@
         items: [
           c('Si tu ___, on visite l’appartement samedi.', ['veux', 'voudras', 'voulais']),
           c('Si le loyer ___ trop cher, cherche autre chose.', ['est', 'sera', 'serait']),
-          c('___ il fait beau, on mange sur la terrasse.', ['S’il', 'Si il', 'Si’l']),
+          c('___ fait beau, on mange sur la terrasse.', ['S’il', 'Si il', 'Si’l']),
           c('___ elle aime le calme, elle va adorer ce quartier.', ['Si', 'S’', 'Qu’']),
           c('Si vous avez des questions, ___ l’agence.', ['appelez', 'vous appelez', 'appeler']),
           c('Si l’appartement est libre, nous ___ signer le bail.', ['allons', 'allions', 'irions']),
