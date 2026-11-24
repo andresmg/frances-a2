@@ -319,7 +319,7 @@ window.UNIT_DATA[1] = {
         { type: 'choice', q: '« Tu es libre dimanche ? »', options: ['proposer', 'accepter', 'refuser'], answer: 0 },
         { type: 'choice', q: '« Je suis désolé, je suis déjà pris. »', options: ['proposer', 'accepter', 'refuser'], answer: 2 },
         { type: 'choice', q: '« D’accord, à quelle heure ? »', options: ['proposer', 'accepter', 'refuser'], answer: 1 },
-        { type: 'choice', q: '« On pourrait aller au restaurant ? »', options: ['proposer', 'accepter', 'refuser'], answer: 0 },
+        { type: 'choice', q: '« Ça te dit d’aller au restaurant ? »', options: ['proposer', 'accepter', 'refuser'], answer: 0 },
         { type: 'choice', q: '« Ce n’est pas possible pour moi ce week-end. »', options: ['proposer', 'accepter', 'refuser'], answer: 2 },
         { type: 'choice', q: '« Super, j’adore cette idée ! »', options: ['proposer', 'accepter', 'refuser'], answer: 1 },
         { type: 'choice', q: '« Tu veux venir à mon anniversaire ? »', options: ['proposer', 'accepter', 'refuser'], answer: 0 },
@@ -452,17 +452,17 @@ window.UNIT_DATA[1] = {
         { type: 'write', q: 'Escribe en francés: «Mi amiga se mudó a Bruselas.»', answers: ['Mon amie a déménagé à Bruxelles.', 'Mon amie s’est installée à Bruxelles.', 'Mon amie est partie à Bruxelles.', 'Ma copine a déménagé à Bruxelles.'] },
         { type: 'write', q: 'Escribe en francés: «Hicimos un viaje a Marruecos.»', answers: ['Nous avons fait un voyage au Maroc.', 'On a fait un voyage au Maroc.'] },
         { type: 'write', q: 'Escribe en francés: «Estudio francés desde hace seis meses.»', answers: ['J’étudie le français depuis six mois.', 'J’apprends le français depuis six mois.'] },
-        { type: 'write', q: 'Escribe en francés: «Quiero vivir en Francia.»', answers: ['Je veux vivre en France.', 'Je veux habiter en France.', 'Je voudrais vivre en France.', 'Je voudrais habiter en France.'] },
+        { type: 'write', q: 'Escribe en francés: «Quiero vivir en Francia.»', answers: ['Je veux vivre en France.', 'Je veux habiter en France.'] },
         { type: 'write', q: 'Escribe en francés: «Tengo la intención de cambiar de trabajo.»', answers: ['J’ai l’intention de changer de travail.', 'J’ai l’intention de changer d’emploi.', 'J’ai l’intention de changer de boulot.'] },
-        { type: 'write', q: 'Escribe en francés: «Me gustaría aprender a tocar el piano.»', answers: ['J’aimerais apprendre à jouer du piano.', 'Je voudrais apprendre à jouer du piano.'] },
+        { type: 'write', q: 'Escribe en francés: «Quiero aprender a tocar el piano.»', answers: ['Je veux apprendre à jouer du piano.'] },
         { type: 'write', q: 'Escribe en francés: «He decidido quedarme en España.»', answers: ['J’ai décidé de rester en Espagne.'] },
         { type: 'write', q: 'Escribe en francés: «No he visto a nadie hoy.»', answers: ['Je n’ai vu personne aujourd’hui.'] },
         { type: 'write', q: 'Escribe en francés: «Trabajé en un restaurante durante tres veranos.»', answers: ['J’ai travaillé dans un restaurant pendant trois étés.'] },
         { type: 'order', q: 'Ordena la frase.', tokens: ['J’', 'ai', 'l’intention', 'de', 'vivre', 'à', 'Paris', '.'] },
         { type: 'order', q: 'Ordena la frase.', tokens: ['Je', 'me', 'suis', 'installée', 'à', 'Lyon', 'il y a', 'trois', 'ans', '.'] },
-        { type: 'open', q: 'Escribe qué tienes intención de hacer el año que viene (2 frases o más).', model: 'L’année prochaine, j’ai l’intention de passer le DELF A2. Je voudrais aussi faire un voyage en Bretagne avec mes amis.', checks: [
+        { type: 'open', q: 'Escribe qué tienes intención de hacer el año que viene (2 frases o más).', model: 'L’année prochaine, j’ai l’intention de passer le DELF A2. Je veux aussi faire un voyage en Bretagne avec mes amis.', checks: [
           { label: 'Al menos 2 frases', test: function (t) { return (t.match(/[^.!?]+[.!?]/g) || []).length >= 2; } },
-          { label: 'Expresas una intención (j’ai l’intention de, je voudrais, je vais…)', re: /(l’intention|l'intention|je veux|je voudrais|j’aimerais|j'aimerais|je vais|je compte)/i },
+          { label: 'Expresas una intención (j’ai l’intention de, je veux, je vais…)', re: /(l’intention|l'intention|je veux|je voudrais|j’aimerais|j'aimerais|je vais|je compte)/i },
           { label: 'Dices cuándo (l’année prochaine, en 2027…)', re: /(prochaine|prochain|bientôt|cet été|cette année|en 20\d\d|dans \S+ (ans|mois))/i }
         ] }
       ]

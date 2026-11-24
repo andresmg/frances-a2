@@ -357,7 +357,7 @@
           w('Escribe en francés: «No he visto nada.»', 'Je n’ai rien vu.'),
           w('Escribe en francés: «Este programa, lo veo cada semana.»', 'Cette émission, je la regarde chaque semaine. | Cette émission, je la regarde toutes les semaines. | Je regarde cette émission chaque semaine. | Je regarde cette émission toutes les semaines.'),
           w('Escribe en francés: «Voy a escribirle (a ella) esta noche.»', 'Je vais lui écrire ce soir.'),
-          w('Escribe en francés: «Quiero decirte algo.»', 'Je veux te dire quelque chose. | Je voudrais te dire quelque chose.'),
+          w('Escribe en francés: «Quiero decirte algo.»', 'Je veux te dire quelque chose.'),
           w('Escribe en francés: «Como no tengo televisión, escucho la radio.»', 'Comme je n’ai pas de télévision, j’écoute la radio. | Comme je n’ai pas de télé, j’écoute la radio.'),
           w('Escribe en francés: «Leo la prensa en Internet.»', 'Je lis la presse sur Internet.'),
           w('Escribe en francés: «Mi programa favorito es un concurso.»', 'Mon émission préférée est un jeu télévisé. | Mon émission préférée, c’est un jeu télévisé.'),

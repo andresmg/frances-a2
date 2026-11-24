@@ -21,7 +21,7 @@
           c('Elle met ___ sucre dans son thé.', ['du', 'de la', 'des']),
           c('Il n’y a plus ___ lait.', ['de', 'du', 'le']),
           c('J’adore ___ chocolat ! (en general)', ['le', 'du', 'de']),
-          c('Je voudrais une bouteille ___ eau.', ['d’', 'de l’', 'de la']),
+          c('Je prends une bouteille ___ eau.', ['d’', 'de l’', 'de la']),
           c('On a acheté ___ viande pour le barbecue.', ['de la', 'du', 'des']),
           c('Il y a beaucoup ___ sel dans cette soupe.', ['de', 'du', 'de le']),
           c('Tu prends ___ fromage ?', ['du', 'de la', 'des']),
@@ -39,7 +39,7 @@
           f('Il faut {des} œufs pour faire une omelette.'),
           f('J’aime beaucoup {les} fraises. (en general)'),
           f('Il reste un peu {de} soupe.'),
-          w('Escribe en francés: «Quiero pan y queso.»', 'Je voudrais du pain et du fromage. | Je veux du pain et du fromage.'),
+          w('Escribe en francés: «Quiero pan y queso.»', 'Je veux du pain et du fromage. | Je prends du pain et du fromage.'),
           w('Escribe en francés: «No tomo azúcar.»', 'Je ne prends pas de sucre.'),
           w('Escribe en francés: «Compra un litro de leche.» (tú)', 'Achète un litre de lait.'),
           w('Escribe en francés: «Hay muchas verduras.»', 'Il y a beaucoup de légumes.')
@@ -48,7 +48,7 @@
       {
         id: 'en', skill: 'Grammaire', title: 'Le pronom en (quantités)',
         summary: 'J’en veux un peu, il n’y en a plus.',
-        tip: '<p><b>en</b> sustituye a <b>du / de la / des + sustantivo</b>: <i>Tu veux du café ? — Oui, j’<b>en</b> veux.</i></p><p>Con una cantidad, la cantidad va al final: <i>J’<b>en</b> ai <b>deux</b>. J’<b>en</b> voudrais <b>un kilo</b>.</i></p><p>Va delante del verbo (o del auxiliar): <i>je n’<b>en</b> veux pas, j’<b>en</b> ai mangé</i>.</p>',
+        tip: '<p><b>en</b> sustituye a <b>du / de la / des + sustantivo</b>: <i>Tu veux du café ? — Oui, j’<b>en</b> veux.</i></p><p>Con una cantidad, la cantidad va al final: <i>J’<b>en</b> ai <b>deux</b>. J’<b>en</b> prends <b>un kilo</b>.</i></p><p>Va delante del verbo (o del auxiliar): <i>je n’<b>en</b> veux pas, j’<b>en</b> ai mangé</i>.</p>',
         items: [
           c('— Tu veux du café ? — Oui, j’___ veux bien.', ['en', 'le', 'y']),
           c('— Vous avez des œufs ? — Oui, nous en avons ___.', ['douze', 'des', 'les']),
@@ -68,7 +68,7 @@
           f('— Il y a des fraises ? — Oui, il y {en} a beaucoup.'),
           f('— Vous avez du pain ? — Non, je n’{en} ai plus.'),
           f('— Tu veux de la soupe ? — Oui, j’{en} veux un peu.'),
-          f('— Combien de bouteilles ? — J’en voudrais {trois|3}.'),
+          f('— Combien de bouteilles ? — J’en prends {trois|3}.'),
           f('— Elle a mangé des crêpes ? — Oui, elle {en} a mangé cinq !'),
           f('— Vous buvez du thé ? — Oui, nous {en} buvons le matin.'),
           f('— On a besoin de farine ? — Oui, on {en} a besoin.'),
@@ -78,7 +78,7 @@
           w('Responde con <b>en</b>: « Tu manges des légumes ? » (Oui, … beaucoup)', 'Oui, j’en mange beaucoup.'),
           w('Responde con <b>en</b>: « Tu as acheté du vin ? » (Oui, … une bouteille)', 'Oui, j’en ai acheté une bouteille.'),
           w('Escribe en francés con <b>en</b>: «No quiero.» (de la tarta)', 'Je n’en veux pas.'),
-          o('J’ / en / voudrais / un / kilo / , / s’il / vous / plaît / .'),
+          o('J’ / en / prends / un / kilo / , / s’il / vous / plaît / .'),
           o('Il / n’ / y / en / a / plus / .')
         ]
       },
@@ -102,7 +102,7 @@
           c('Un cartel « Ne pas toucher » significa…', ['No tocar.', 'No toca.', 'No se tocó.']),
           c('Il ne faut pas ___ le lait trop longtemps.', ['chauffer', 'chauffes', 'chauffé']),
           c('« Il n’est pas nécessaire de… » significa…', ['no hace falta…', 'está prohibido…', 'hay que…']),
-          c('Tu ___ goûter avant de servir. (consejo)', ['devrais', 'faudrait', 'interdis']),
+          c('Tu ___ goûter avant de servir. (obligación)', ['dois', 'faut', 'interdis']),
           f('Il {faut} mélanger la farine et le sucre.'),
           f('Vous {devez} laisser cuire 20 minutes.', 'devoir'),
           f('Il est {interdit} d’entrer dans la cuisine.', 'prohibido'),
@@ -187,7 +187,7 @@
           f('J’ai acheté un kilo de {pommes} de terre.'),
           f('Il faut une cuillère de {sucre}.', 'azúcar'),
           f('Mets un peu de {poivre}.', 'pimienta'),
-          f('Je voudrais une {tranche} de jambon.', 'loncha'),
+          f('Je prends une {tranche} de jambon.', 'loncha'),
           w('Escribe en francés: «Me gustan las fresas.»', 'J’aime les fraises.'),
           w('Escribe en francés: «Necesito harina y huevos.»', 'J’ai besoin de farine et d’œufs. | J’ai besoin de farine et d’oeufs. | Il me faut de la farine et des œufs. | Il me faut de la farine et des oeufs.'),
           w('Escribe en francés: «No como cerdo.»', 'Je ne mange pas de porc.')
@@ -233,7 +233,7 @@
       {
         id: 'restaurant', skill: 'Communication', title: 'Au restaurant',
         summary: 'Pedir, quejarse, felicitar y advertir.',
-        tip: '<p>Pedir: <i>Je voudrais… Je vais prendre… Pour moi, ce sera… L’addition, s’il vous plaît.</i> La carne: <i>saignant, à point, bien cuit</i>.</p><p>Satisfacción: <i>C’est délicieux ! C’était parfait. Je me suis régalé !</i> Insatisfacción: <i>C’est froid. C’est trop salé. Ce n’est pas ce que j’ai commandé.</i></p><p>Advertir: <i>Attention, c’est chaud ! Fais attention ! Méfie-toi !</i></p>',
+        tip: '<p>Pedir: <i>Je souhaite… Je vais prendre… Pour moi, ce sera… L’addition, s’il vous plaît.</i> La carne: <i>saignant, à point, bien cuit</i>.</p><p>Satisfacción: <i>C’est délicieux ! C’était parfait. Je me suis régalé !</i> Insatisfacción: <i>C’est froid. C’est trop salé. Ce n’est pas ce que j’ai commandé.</i></p><p>Advertir: <i>Attention, c’est chaud ! Fais attention ! Méfie-toi !</i></p>',
         items: [
           c('Para pedir:', ['Je vais prendre le menu du jour.', 'Je vais manger le menu du jour hier.', 'Donne-moi le menu !']),
           c('Para pedir la cuenta:', ['L’addition, s’il vous plaît.', 'La facture, s’il te plaît.', 'Le compte, merci.']),
@@ -244,7 +244,7 @@
           c('« L’entrée » en un menú es…', ['el entrante', 'la entrada del restaurante', 'el plato principal']),
           c('« Le plat principal » es…', ['el plato principal', 'el plato pequeño', 'el postre']),
           c('« Une carafe d’eau » es…', ['una jarra de agua del grifo', 'una botella de agua con gas', 'un vaso']),
-          c('Para reservar:', ['Je voudrais réserver une table pour deux personnes.', 'Je réserve deux personnes de table.', 'Une table, je veux.']),
+          c('Para reservar:', ['Je souhaite réserver une table pour deux personnes.', 'Je réserve deux personnes de table.', 'Une table, je veux.']),
           c('¿Qué frase expresa satisfacción?', ['C’était délicieux !', 'C’est trop salé.', 'C’est froid.']),
           c('¿Qué frase expresa insatisfacción?', ['Ce n’est pas ce que j’ai commandé.', 'C’est parfait, merci.', 'Je me suis régalé !']),
           c('« Je me suis régalé ! » significa…', ['¡Qué rico estaba todo!', 'Me he hecho un regalo.', 'Me he enfadado.']),
@@ -260,13 +260,13 @@
           f('L’{addition}, s’il vous plaît.'),
           f('Je vais {prendre} le poulet.'),
           f('{Attention}, c’est chaud !'),
-          o('Je / voudrais / réserver / une / table / pour / ce / soir / .'),
+          o('Je / souhaite / réserver / une / table / pour / ce / soir / .'),
           o('Pour / moi / , / ce / sera / une / salade / .'),
           w('Escribe en francés: «La cuenta, por favor.»', 'L’addition, s’il vous plaît.'),
           w('Escribe en francés: «¡Estaba delicioso!»', 'C’était délicieux ! | C’était très bon !'),
-          open('Quéjate con educación en un restaurante: dos problemas con tu comida.', 'Excusez-moi, monsieur, mais ma soupe est froide. Et j’ai commandé une salade, pas des frites. Vous pourriez changer, s’il vous plaît ?', [
+          open('Quéjate con educación en un restaurante: dos problemas con tu comida.', 'Excusez-moi, monsieur, mais ma soupe est froide. Et j’ai commandé une salade, pas des frites. Vous pouvez changer, s’il vous plaît ?', [
             X.sentences(2),
-            { label: 'Eres cortés', re: /(excusez|pardon|s’il vous plaît|s'il vous plaît|pourriez)/i },
+            { label: 'Eres cortés', re: /(excusez|pardon|s’il vous plaît|s'il vous plaît|pouvez|pourriez)/i },
             { label: 'Explicas el problema', re: /(froid|froide|salé|cuit|pas ce que|commandé|fade|sale|pas bon)/i }
           ])
         ]
@@ -313,10 +313,10 @@
         summary: 'Escucha y escribe la frase.',
         tip: '<p>Pulsa ▶ (otra vez para oírlo más lento) y escribe lo que oyes, con acentos.</p>',
         items: [
-          d('Je voudrais du pain et du fromage.'),
+          d('Je prends du pain et du fromage.'),
           d('Il n’y a plus de lait.'),
           d('Tu veux de l’eau ?'),
-          d('J’en voudrais un kilo, s’il vous plaît.'),
+          d('J’en prends un kilo, s’il vous plaît.'),
           d('Il n’y en a plus.'),
           d('Il faut des œufs pour faire une omelette.', 'Il faut des oeufs pour faire une omelette.'),
           d('Il est interdit de fumer ici.'),
@@ -350,7 +350,7 @@
         summary: 'Traduce, escribe recetas y opiniones.',
         tip: '<p>Cuida los partitivos (<i>du, de la, des</i>, y <i>de</i> tras negación o cantidad) y el imperativo de las recetas.</p>',
         items: [
-          w('Escribe en francés: «Quiero un café y un cruasán.»', 'Je voudrais un café et un croissant. | Je veux un café et un croissant.'),
+          w('Escribe en francés: «Quiero un café y un cruasán.»', 'Je veux un café et un croissant. | Je prends un café et un croissant.'),
           w('Escribe en francés: «No bebo vino.»', 'Je ne bois pas de vin.'),
           w('Escribe en francés: «He comprado un kilo de tomates.»', 'J’ai acheté un kilo de tomates.'),
           w('Escribe en francés: «¿Quieres queso?»', 'Tu veux du fromage ?'),
@@ -364,7 +364,7 @@
           w('Escribe en francés: «Corten las cebollas.» (vous)', 'Coupez les oignons.'),
           w('Escribe en francés: «Mezcla la harina con la leche.» (tú)', 'Mélange la farine avec le lait. | Mélange la farine et le lait.'),
           w('Escribe en francés: «Pon la pasta en el agua.» (tú)', 'Mets les pâtes dans l’eau.'),
-          w('Escribe en francés: «Quisiera reservar una mesa para cuatro.»', 'Je voudrais réserver une table pour quatre personnes. | Je voudrais réserver une table pour quatre. | Je voudrais réserver une table pour 4 personnes. | Je voudrais réserver une table pour 4.'),
+          w('Escribe en francés: «Quiero reservar una mesa para cuatro.»', 'Je veux réserver une table pour quatre personnes. | Je veux réserver une table pour quatre. | Je veux réserver une table pour 4 personnes. | Je veux réserver une table pour 4. | Je souhaite réserver une table pour quatre personnes. | Je souhaite réserver une table pour quatre.'),
           w('Escribe en francés: «Para mí, el pollo.»', 'Pour moi, le poulet. | Pour moi, ce sera le poulet.'),
           w('Escribe en francés: «La carne poco hecha, por favor.»', 'La viande saignante, s’il vous plaît.'),
           w('Escribe en francés: «La sopa está fría.»', 'La soupe est froide.'),
